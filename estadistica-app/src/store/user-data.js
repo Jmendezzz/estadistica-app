@@ -5,12 +5,13 @@ const dataSlice = createSlice({
     name:"Data",
     initialState: initialDataState,
     reducers:{
-        addData(state,action){
+        addData(state,action){ // addData({nombre})
             state.data.push(action.payload);
+            console.log(action.payload);
             state.data.sort((a,b)=>a-b);
         },
         deleteData(state,action){
-            state.data = state.data.filter(data=>data != action.payload);
+            state.data = state.data.filter((data,index)=>index != action.payload);
             state.data.sort((a,b)=>a-b);
         }
     }

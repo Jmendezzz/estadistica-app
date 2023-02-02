@@ -1,7 +1,7 @@
 import style from "./Input.module.css";
 
-export const Input = (props)=>{
+export const Input = ({...props})=>{
     
-    return <input className={style.input} {...props.input}></input>
+    return <input className={style.input} {...props} ></input>
 
 }
