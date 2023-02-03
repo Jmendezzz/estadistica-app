@@ -52,4 +52,5 @@ export const DataInput = ()=>{
 
 function validation(num){
     return isNaN(parseFloat(num));
+    //validacion lista
 }
