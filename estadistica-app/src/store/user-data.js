@@ -7,7 +7,6 @@ const dataSlice = createSlice({
     reducers:{
         addData(state,action){ // addData({nombre})
             state.data.push(action.payload);
-            console.log(action.payload);
             state.data.sort((a,b)=>a-b);
         },
         deleteData(state,action){
