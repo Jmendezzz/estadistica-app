@@ -1,0 +1,27 @@
+.contenedor{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    align-items: center;
+    flex-direction: column;
+
+    
+}
+
+table {
+    margin-top: 20px;
+    border-collapse: collapse;
+    width: 80%;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  th {
+    background-color: rgb(59, 140, 198);
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }

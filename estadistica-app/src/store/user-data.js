@@ -6,6 +6,7 @@ const dataSlice = createSlice({
     initialState: initialDataState,
     reducers:{
         addData(state,action){ // addData({nombre})
+            console.log("Valor recibido " + action.payload);
             state.data.push(action.payload);
             state.data.sort((a,b)=>a-b);
         },
